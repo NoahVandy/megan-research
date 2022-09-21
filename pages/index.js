@@ -1,6 +1,11 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import styles from '../styles/Home.module.css'
+import Head from "next/head"
+import Image from "next/image"
+import styles from "../styles/Home.module.css"
+
+import Headshot from "../public/headshot.jpeg"
+import LinkCard from "../components/LinkCard"
+
+import { BookOpen, Twitter, Linkedin } from "react-feather"
 
 export default function Home() {
   return (
@@ -12,43 +17,51 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
-
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
-        </p>
+        <h1 className={styles.title}>Megan Wittman</h1>
+        <div className={styles.bio}>
+          <p className={styles.description}>
+            is a 2021-2025 Self Graduate Fellow pursuing a Ph.D. in
+            Environmental Engineering. Originally from Central Illinois
+            (Bloomington, IL), Wittman graduated with a B.S. in Chemical
+            Engineering with an Environmental Engineering emphasis from the
+            University of Kansas. She pursued undergraduate research, deepening
+            her understanding of urban water sustainability and resource
+            recovery beyond the classroom at KU and in collaboration with
+            ReNUWIt, an interdisciplinary multi-institution engineering research
+            center. She will be investigating microbial and kinetic mechanisms
+            in nutrient removal, with the goal of ultimately lowering energy
+            usage by wastewater treatment plants. Wittman is passionate about
+            making data accessible and understandable to empower communities
+            with sustainable water technologies.
+            <br />
+            <br /> Mentor: Belinda M.S. Sturm, Ph.D. Associate Vice Chancellor
+            for Research, Professor of Civil, Environmental & Architectural
+            Engineering
+          </p>
+          <div className={styles.imgContainer}>
+            <Image src={Headshot} layout="fill" objectFit="cover" />
+          </div>
+        </div>
 
         <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h2>Documentation &rarr;</h2>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h2>Learn &rarr;</h2>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/canary/examples"
-            className={styles.card}
-          >
-            <h2>Examples &rarr;</h2>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h2>Deploy &rarr;</h2>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
+          <LinkCard
+            desc="Follow me on Twitter to get frequent updates on current research."
+            icon={<Twitter />}
+            title="Twitter."
+            link={"https://twitter.com/MeganOWittman"}
+          />
+          <LinkCard
+            desc="Add me to your LinkedIn network, for a more professional feel."
+            icon={<Linkedin />}
+            title="LinkedIn."
+            link={"https://www.linkedin.com/in/meganowittman"}
+          />
+          <LinkCard
+            desc="See all of my publications and what I'm reading on Research Gate."
+            icon={<BookOpen />}
+            title="Research Gate."
+            link={"https://www.researchgate.net/profile/Megan-Wittman"}
+          />
         </div>
       </main>
 
@@ -58,7 +71,7 @@ export default function Home() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Powered by{' '}
+          Powered by{" "}
           <span className={styles.logo}>
             <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
           </span>

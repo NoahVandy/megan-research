@@ -1,0 +1,36 @@
+.navContainer,
+.shrunkNavContainer {
+  height: 120px;
+  background-color: transparent;
+  position: fixed;
+  width: 100%;
+  overflow: hidden;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 24px;
+  transition: 0.4s;
+  z-index: 100;
+}
+
+.shrunkNavContainer {
+  height: 80px;
+  background-color: #7d5a50;
+  color: #fcdec0;
+  font-size: 20px;
+  z-index: 100;
+}
+
+.navMenu {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: row;
+  width: fit-content;
+}
+
+.navMenu li {
+  float: left;
+  padding: 10px;
+}
