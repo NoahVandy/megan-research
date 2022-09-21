@@ -16,8 +16,8 @@
 
 .shrunkNavContainer {
   height: 80px;
-  background-color: #7d5a50;
-  color: #fcdec0;
+  background-color: black;
+  color: #f8fafc;
   font-size: 20px;
   z-index: 100;
 }
