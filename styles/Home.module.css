@@ -80,11 +80,21 @@
   justify-content: center;
   flex-wrap: wrap;
   max-width: 90%;
+  flex-direction: row;
 }
 
 .logo {
   height: 1em;
   margin-left: 0.5rem;
+}
+
+.containerWithTitle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: fit-content;
 }
 
 @media (max-width: 600px) {
@@ -123,7 +133,7 @@
   }
   .bio {
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     justify-content: center;
     align-items: center;
     align-content: center;

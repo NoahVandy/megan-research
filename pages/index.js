@@ -3,9 +3,11 @@ import Image from "next/image"
 import styles from "../styles/Home.module.css"
 
 import Headshot from "../public/headshot.jpeg"
+import ReactorsImage from "../public/reactors.jpeg"
 import LinkCard from "../components/LinkCard"
 
 import { BookOpen, Twitter, Linkedin } from "react-feather"
+import ProjectCard from "../components/ProjectCard"
 
 export default function Home() {
   return (
@@ -43,25 +45,41 @@ export default function Home() {
           </div>
         </div>
 
-        <div className={styles.grid}>
-          <LinkCard
-            desc="Follow me on Twitter to get frequent updates on current research."
-            icon={<Twitter />}
-            title="Twitter."
-            link={"https://twitter.com/MeganOWittman"}
-          />
-          <LinkCard
-            desc="Add me to your LinkedIn network, for a more professional feel."
-            icon={<Linkedin />}
-            title="LinkedIn."
-            link={"https://www.linkedin.com/in/meganowittman"}
-          />
-          <LinkCard
-            desc="See all of my publications and what I'm reading on Research Gate."
-            icon={<BookOpen />}
-            title="Research Gate."
-            link={"https://www.researchgate.net/profile/Megan-Wittman"}
-          />
+        <div className={styles.containerWithTitle}>
+          <h2>Links</h2>
+          <div className={styles.grid}>
+            <LinkCard
+              desc="Follow me on Twitter to get frequent updates on current research."
+              icon={<Twitter />}
+              title="Twitter."
+              link={"https://twitter.com/MeganOWittman"}
+            />
+            <LinkCard
+              desc="Add me to your LinkedIn network, for a more professional feel."
+              icon={<Linkedin />}
+              title="LinkedIn."
+              link={"https://www.linkedin.com/in/meganowittman"}
+            />
+            <LinkCard
+              desc="See all of my publications and what I'm reading on Research Gate."
+              icon={<BookOpen />}
+              title="Research Gate."
+              link={"https://www.researchgate.net/profile/Megan-Wittman"}
+            />
+          </div>
+        </div>
+
+        <div className={styles.containerWithTitle}>
+          <h2>Current Work</h2>
+          <div className={styles.bio}>
+            <div className={styles.imgContainer}>
+              <Image src={ReactorsImage} layout="fill" objectFit="cover" />
+            </div>
+            <ProjectCard
+              title="Model Reactors"
+              desc="I'm not sure what to put here, Megan still needs to send her abstract and all of the details about this project."
+            />
+          </div>
         </div>
       </main>
 
