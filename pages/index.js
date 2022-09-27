@@ -3,7 +3,7 @@ import Image from "next/image"
 import styles from "../styles/Home.module.css"
 
 import Headshot from "../public/headshot.jpeg"
-import ReactorsImage from "../public/reactors.jpeg"
+import ReactorsImage from "../public/reactors.jpg"
 import LinkCard from "../components/LinkCard"
 
 import { BookOpen, Twitter, Linkedin } from "react-feather"
@@ -46,7 +46,7 @@ export default function Home() {
         </div>
 
         <div className={styles.containerWithTitle}>
-          <h2>Links</h2>
+          <h2 className={styles.subTitle}>Links</h2>
           <div className={styles.grid}>
             <LinkCard
               desc="Follow me on Twitter to get frequent updates on current research."
@@ -69,8 +69,8 @@ export default function Home() {
           </div>
         </div>
 
-        <div className={styles.containerWithTitle}>
-          <h2>Current Work</h2>
+        {/* <div className={styles.containerWithTitle}>
+          <h2 className={styles.subTitle}>Current Work</h2>
           <div className={styles.bio}>
             <div className={styles.imgContainer}>
               <Image src={ReactorsImage} layout="fill" objectFit="cover" />
@@ -80,7 +80,7 @@ export default function Home() {
               desc="I'm not sure what to put here, Megan still needs to send her abstract and all of the details about this project."
             />
           </div>
-        </div>
+        </div> */}
       </main>
 
       <footer className={styles.footer}>
