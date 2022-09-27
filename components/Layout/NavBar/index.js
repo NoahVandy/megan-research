@@ -12,7 +12,9 @@ export default function NavBar({ shrunk }) {
       id="navigation"
       className={shrunk ? styles.shrunkNavContainer : styles.navContainer}
     >
-      <p>test</p>
+      <Link href="/">
+        <a>Home</a>
+      </Link>
       <div id="navigation-menu" className={styles.navMenu}>
         <ul>
           <li>
