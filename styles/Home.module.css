@@ -111,7 +111,7 @@
   }
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 799px) {
   .container {
     margin: 0.5rem;
     padding: 0.5rem;

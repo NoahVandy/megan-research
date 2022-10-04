@@ -56,7 +56,7 @@
   color: #00ccbb;
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 799px) {
   .card {
     max-height: max-content;
     padding: 15px;

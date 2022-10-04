@@ -1,0 +1,88 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  min-height: 100vh;
+  max-height: fit-content;
+}
+
+.paperContainer {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  max-width: min-content;
+  flex-direction: column;
+  padding: 2em;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 10px 0px;
+  border-radius: 1em;
+}
+
+.subPage {
+  min-height: 75vh;
+  max-height: fit-content;
+  background-color: #f3f4f7;
+  padding-top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.imgContainer {
+  width: 700px;
+  height: 350px;
+  z-index: 9;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  margin: 1em;
+}
+
+.paperImgContainer {
+  width: 1000px;
+  height: 350px;
+  z-index: 9;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  margin: 1em;
+}
+
+.title {
+  margin: 0;
+  line-height: 1.15;
+  font-size: 3rem;
+  color: #d35fb7;
+}
+
+.description {
+  text-align: center;
+  padding: 4rem;
+  line-height: 1.5;
+  font-size: 1.5rem;
+  width: 50%;
+}
+
+@media only screen and (max-width: 799px) {
+  .imgContainer {
+    width: 90%;
+    padding: 0.5rem;
+    object-fit: cover;
+  }
+
+  .paperImgContainer {
+    width: 100%;
+    height: 120px;
+    padding: 0.5rem;
+    object-fit: scale-down;
+  }
+
+  .paperContainer {
+    width: 90%;
+    max-width: fit-content;
+  }
+}

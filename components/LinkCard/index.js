@@ -14,7 +14,12 @@ export default function LinkCard({ title, desc, link, icon }) {
   })
 
   return (
-    <a href={link} className={styles.card}>
+    <a
+      target="_blank"
+      rel="noopener noreferrer"
+      href={link}
+      className={styles.card}
+    >
       {icon}
       <h4 className={titleColor}>{title}</h4>
       <p>{desc}</p>
