@@ -2,7 +2,6 @@ import Link from "next/link"
 import styles from "./styles.module.css"
 
 import { useRouter } from "next/router"
-import { useEffect } from "react"
 
 export default function NavBar({ shrunk }) {
   const router = useRouter()

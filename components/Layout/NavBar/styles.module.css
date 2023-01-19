@@ -50,3 +50,27 @@
   background-color: #d35fb7;
   color: #fffff2;
 }
+
+@media only screen and (max-width: 850px) {
+  .navContainer,
+  .shrunkNavContainer,
+  .navContainer a,
+  .shrunkNavContainer a,
+  .navContainer li,
+  .shrunkNavContainer li {
+    width: 100%;
+    font-size: 20px;
+    padding: 4px;
+  }
+
+  .navContainer ul,
+  .shrunkNavContainer ul {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .navContainer,
+  .shrunkNavContainer {
+    height: 75px;
+  }
+}
