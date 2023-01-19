@@ -34,7 +34,7 @@ export default function NavBar({ shrunk }) {
             </Link>
           </li>
           <li>
-            <Link href="/contact">
+            <Link href="mailto:mwittm2@ku.edu?subject=Conecting with you-">
               <a>Contact</a>
             </Link>
           </li>
